@@ -7,7 +7,7 @@ int main(int ac, char **av)
     if (ac != 2) {
         return 1;
     }
-    auto queueDefaultMaxSize = std::stoi(av[1]);
+    size_t queueDefaultMaxSize = std::stoi(av[1]);
     std::queue<std::string> Q;
     int nestingLevel = 0;
     auto printAndPopAllCmds = [&Q] () {
